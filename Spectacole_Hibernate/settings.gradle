@@ -1,0 +1,6 @@
+rootProject.name = 'Spectacole_Hibernate'
+include 'Domain'
+include 'Persistence'
+include 'Services'
+include 'Server'
+

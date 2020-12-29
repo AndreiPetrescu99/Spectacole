@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:Spectacole.db</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <property name="show_sql">false</property>
+        <property name="format_sql">false</property>
+
+        <mapping resource="Spectacole.hbm/Spectacole.hbm.xml"/>
+        <mapping resource="Vanzare.hbm/Vanzare.hbm.xml"/>
+        <mapping resource="VanzareLoc.hbm/VanzareLoc.hbm.xml"/>
+        <mapping resource="Verificare.hbm/Verificare.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>
